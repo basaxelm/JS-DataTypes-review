@@ -18,7 +18,7 @@ console.log(string.includes("on")); //5
 let sentence = "I hope this course is not full of jargon.";
 console.log(sentence.includes("jargon")); //6
 
-let num_a = Math.floor(Math.random() * 101);
+let num_a = Math.floor(Math.random() * 101); 
 console.log(num_a); //7
 
 let num_b = Math.floor(Math.random() * 51) + 50;
@@ -27,10 +27,19 @@ console.log(num_b); //8
 let num_c = Math.floor(Math.random() * 256);
 console.log(num_c); //9
 
+//  Math.random --> choose a number btw 0 and 0.999. To increase its range it's convenient to multiply to 
+// an specified number (adding 1 so the range includes that number)
+//
+//  Math.floor & Math.ceil --> they round the number to the close one. This way we get a int number
+//
+//  To increase the min range, we should sum a specified number. It's convenient to remember that number when
+// setting the max range.
+//
+
 let string2 = "JavaScript";
 console.log(string2.charAt(Math.floor(Math.random() * 11))); //10
 
-console.log("1\t1\t1\t1\t1");
+console.log("1\t1\t1\t1\t1"); // Using Escape Sequences
 console.log("2\t1\t2\t4\t8");
 console.log("3\t1\t3\t9\t27");
 console.log("4\t1\t4\t16\t64");
